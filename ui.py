@@ -27,7 +27,7 @@ class View(QWidget):
         self.le2.setAlignment(QtCore.Qt.AlignRight)
         
         self.cb = QComboBox(self)
-        self.cb.addItems(['+', '-', '*', '/'])
+        self.cb.addItems(['+', '-', '*', '/', '^'])     # 거듭제곱 연산자 추가
         
         hbox_formular = QHBoxLayout()
         hbox_formular.addWidget(self.le1)
