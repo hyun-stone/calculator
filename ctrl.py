@@ -28,10 +28,14 @@ class Control:
         return a*b
     
     def div(self, a, b):        # 나눗셈 함수 추가
-        if (b==0):
-            return 0
-        else:
-            return a/b
+        try:
+            if (b==0):
+                raise Exception("Divisor Error")
+            
+        except Exception as e:
+            return e
+        
+        return a/b
     
     def pow(self, a, b):        # 제곱 연산 함수 추가
         return pow(a, b)
